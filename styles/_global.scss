@@ -1,0 +1,62 @@
+.button {
+  // box-shadow: 0 0.4rem 0.8rem 0.2rem rgb(0, 0, 0, 0.2);
+  transition: var(--timing-animation) ease-in-out;
+  &--active {
+    background-color: var(--color-white);
+    border-radius: var(--button-radius);
+    padding: 1.3rem 4.5rem;
+    color: var(--color-active);
+    border: 0.1rem solid var(--color-active);
+  }
+
+  &--active:hover {
+    background-color: var(--color-active);
+    color: var(--color-white);
+  }
+
+  &--active-2 {
+    background-color: var(--color-active);
+    border-radius: var(--default-border-radius);
+    padding: 1.75rem 7.75rem;
+    color: var(--color-white);
+    // box-shadow: 0 1.5rem 5rem 0.8rem #f5383859;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  &--active-2:hover {
+    box-shadow: 0 1.5rem 5rem 0.8rem #f5383859;
+    font-size: 1.8rem;
+  }
+
+  &--active-card {
+    background-color: var(--color-white);
+    border-radius: var(--button-radius);
+    padding: 1.3rem 6.29rem;
+    color: var(--color-active);
+    border: 0.2rem solid var(--color-active);
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  &--active-card:hover,
+  &--catchy {
+    background-color: var(--color-active);
+    color: var(--color-white);
+    box-shadow: 0 0.4rem 0.8rem 0.2rem #f5383859;
+  }
+
+  &--disabled {
+    background-color: var(--color-grayish-blue);
+    cursor: not-allowed;
+    user-select: none;
+  }
+}
+
+.h2-heading {
+  color: #0b132a;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 500;
+}
