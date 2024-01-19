@@ -88,6 +88,27 @@ span {
 
 /*  Header*/
 .header {
+  &__icons {
+    display: flex;
+    gap: 3rem;
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: var(--timing-animation);
+    @include tablet {
+      visibility: visible;
+      z-index: 1;
+    }
+    @include mobile {
+      visibility: visible;
+      z-index: 1;
+    }
+  }
+  &__icon {
+    width: 4rem;
+  }
+  position: relative;
   @include display-flex;
   justify-content: space-between;
   margin-top: var(--default-padding);
@@ -107,6 +128,13 @@ span {
     gap: 4rem;
     font-weight: 600;
     align-items: center;
+
+    @include tablet {
+      display: none;
+    }
+    @include mobile {
+      display: none;
+    }
   }
 }
 
@@ -121,6 +149,13 @@ span {
 }
 
 .links {
+  @include tablet {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
+
   @include display-flex;
   color: var(--color-paragraph);
   font-weight: 400;
