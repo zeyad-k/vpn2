@@ -58,6 +58,7 @@ ol {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
@@ -377,7 +378,76 @@ span {
   gap: calc(var(--default-padding) * 3);
 }
 
+// opinion part
+.opinions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5rem;
+  // flex-wrap: wrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  .opinion {
+    scroll-snap-align: start;
+    width: 40rem;
+    padding: 3rem;
+    display: flex;
+    flex: 1;
+    // flex-basis: 30%;
+    // flex-shrink: 0;
+    flex-direction: column;
+    border: 0.2rem solid var(--color-active);
+    border-radius: var(--default-border-radius);
+    gap: 0.5rem;
+
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__user {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+
+      &--name {
+        color: #0b132a;
+        font-family: Rubik;
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+
+      &--location {
+        color: #4f5665;
+        font-family: Rubik;
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+    }
+
+    &__rateing {
+      display: flex;
+      gap: 0.5rem;
+
+      .star {
+        margin-bottom: 0.1rem;
+      }
+    }
+    &__content {
+      color: #0b132a;
+      font-family: Rubik;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 3rem; /* 187.5% */
+    }
+  }
+}
+// End opinion part
+
 .footer {
+  margin-top: 25rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -395,7 +465,6 @@ span {
   }
   &_copywright {
     color: #afb5c0;
-
     font-family: Rubik;
     font-size: 1.6rem;
     font-style: normal;
@@ -456,5 +525,19 @@ span {
   @include mobile {
     flex-direction: column;
     gap: calc(var(--default-padding) / 2);
+  }
+}
+
+.subscribe {
+  position: absolute;
+  margin-top: -35rem;
+  background-color: var(--color-white);
+  // border: 0.2rem solid #afb5c0;
+  border-radius: var(--default-border-radius);
+  box-shadow: 0 3rem 06rem 1rem rgb(0, 0, 0, 0.2);
+
+  padding: 4rem 7rem;
+  &_buttons {
+    justify-content: flex-end;
   }
 }

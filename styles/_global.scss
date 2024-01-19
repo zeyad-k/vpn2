@@ -19,14 +19,15 @@
     border-radius: var(--default-border-radius);
     padding: 1.75rem 7.75rem;
     color: var(--color-white);
-    // box-shadow: 0 1.5rem 5rem 0.8rem #f5383859;
+    box-shadow: 0 1.5rem 5rem 0.8rem #f5383859;
     font-weight: 700;
     font-size: 1.6rem;
     line-height: 2.5rem;
   }
   &--active-2:hover {
-    box-shadow: 0 1.5rem 5rem 0.8rem #f5383859;
-    font-size: 1.8rem;
+    color: var(--color-active);
+
+    background-color: var(--color-white);
   }
 
   &--active-card {
@@ -44,7 +45,10 @@
     color: var(--color-white);
     box-shadow: 0 0.4rem 0.8rem 0.2rem #f5383859;
   }
-
+  &--catchy:hover {
+    color: var(--color-active);
+    background-color: var(--color-white);
+  }
   &--disabled {
     background-color: var(--color-grayish-blue);
     cursor: not-allowed;
@@ -54,7 +58,7 @@
 
 .h2-heading {
   color: #0b132a;
-  text-align: center;
+  // text-align: center;
   font-family: Rubik;
   font-size: 3.5rem;
   font-style: normal;
