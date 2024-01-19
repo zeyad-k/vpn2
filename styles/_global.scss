@@ -49,11 +49,6 @@
     color: var(--color-active);
     background-color: var(--color-white);
   }
-  &--disabled {
-    background-color: var(--color-grayish-blue);
-    cursor: not-allowed;
-    user-select: none;
-  }
 }
 
 .h2-heading {
