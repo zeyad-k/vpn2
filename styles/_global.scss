@@ -1,4 +1,9 @@
+@import "./mixins";
+
 .button {
+  @include mobile-tablet {
+    font-size: 1.4rem;
+  }
   // box-shadow: 0 0.4rem 0.8rem 0.2rem rgb(0, 0, 0, 0.2);
   transition: var(--timing-animation) ease-in-out;
   &--active {
@@ -58,6 +63,9 @@
   font-size: 3.5rem;
   font-style: normal;
   font-weight: 500;
+  @include mobile {
+    font-size: 2.5rem;
+  }
 }
 
 input[type="checkbox"] {

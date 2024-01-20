@@ -235,6 +235,9 @@ span {
     font-style: normal;
     font-weight: 500;
     line-height: 7rem;
+    @include mobile {
+      font-size: 3rem;
+    }
   }
   &__description {
     color: var(--color-paragraph);
