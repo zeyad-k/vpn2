@@ -22,9 +22,11 @@
         </div>
         <div class="links">
           <a href="#about" class="links__link link_about">About</a>
-          <a href="#features" class="links__link">Features</a>
-          <a href="#pricing" class="links__link">Pricing</a>
-          <a href="#testimonials" class="links__link">Testimonials</a>
+          <a href="#features" class="links__link link_features">Features</a>
+          <a href="#pricing" class="links__link link_pricing">Pricing</a>
+          <a href="#testimonials" class="links__link link_testimonials"
+            >Testimonials</a
+          >
           <a href="#help" class="links__link">Help</a>
         </div>
         <div class="header__buttons">
@@ -32,16 +34,37 @@
           <a href="# " class="header__button button--active">Sign out</a>
         </div>
         <div class="header__icons">
-          <img
-            src="./images/responsive/menu-burger.svg"
-            alt=""
-            class="user__icon header__icon"
-          />
-          <img
-            src="./images/responsive/user.svg"
-            alt=""
-            class="hamburger__icon header__icon"
-          />
+          <div class="toggle-user">
+            <label class="toggle-label" for="user__checkbox">
+              <img
+                src="./images/responsive/user.svg"
+                alt=""
+                class="user__icon header__icon"
+              />
+            </label>
+            <input
+              type="checkbox"
+              class="user__checkbox"
+              name="user__checkbox"
+              id="user__checkbox"
+            />
+          </div>
+
+          <div class="toggle-menu">
+            <label class="toggle-label" for="menu__checkbox">
+              <img
+                src="./images/responsive/menu-burger.svg"
+                alt=""
+                class="hamburger__icon header__icon"
+              />
+            </label>
+            <input
+              type="checkbox"
+              class="menu__checkbox"
+              name="menu__checkbox"
+              id="menu__checkbox"
+            />
+          </div>
         </div>
       </header>
 
