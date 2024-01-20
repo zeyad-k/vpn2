@@ -91,6 +91,7 @@ span {
   &__icons {
     // display: flex;
     position: relative;
+    // width: 3rem;
   }
   .toggle-user {
     z-index: -1;
@@ -117,7 +118,7 @@ span {
     }
   }
   &__icon {
-    width: 4rem;
+    width: 3rem;
   }
   @include display-flex;
   justify-content: space-between;
@@ -598,6 +599,9 @@ span {
     margin-left: -1.8rem;
     align-items: flex-start;
     justify-content: flex-start;
+    @include mobile {
+      display: none;
+    }
   }
   &_copywright {
     color: #afb5c0;
@@ -623,6 +627,9 @@ span {
     }
   }
   &__right {
+    @include mobile {
+      display: none;
+    }
     width: 100%;
     display: flex;
     justify-content: space-between;
