@@ -382,9 +382,9 @@ span {
   }
   @include mobile {
     grid-template-columns: 1fr;
-    justify-items: stretch;
-    max-width: 70%;
-    margin: 0 auto;
+    // justify-items: stretch;
+    // max-width: 70%;
+    // margin: 0 auto;
     font-size: 1.4rem;
   }
 
