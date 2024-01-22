@@ -383,8 +383,7 @@ span {
   @include mobile {
     grid-template-columns: 1fr;
     justify-items: stretch;
-    // padding: 0;
-    max-width: 60%;
+    max-width: 70%;
     margin: 0 auto;
     font-size: 1.4rem;
   }
@@ -408,6 +407,7 @@ span {
   }
   .icon-group {
     display: flex;
+    flex-shrink: 1;
     gap: calc(var(--default-padding) * 0.5);
     padding: 3rem;
     // @include mobile {
@@ -416,6 +416,7 @@ span {
 
     .text-group {
       display: flex;
+      flex-shrink: 1;
       flex-direction: column;
       gap: 0.5rem;
       &--number {
