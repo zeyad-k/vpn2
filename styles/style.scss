@@ -176,7 +176,7 @@ span {
     z-index: -1;
     top: 0;
     padding: 1.5rem 1rem;
-    gap: 2rem;
+    gap: 1rem;
     width: 100vw;
     transition: var(--timing-animation);
   }
@@ -187,7 +187,7 @@ span {
   gap: 4rem;
 
   @include mobile {
-    gap: calc(var(--default-padding) / 2);
+    gap: calc(var(--default-padding) / 4);
   }
 
   &__link {
