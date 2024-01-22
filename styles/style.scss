@@ -384,7 +384,7 @@ span {
     grid-template-columns: 1fr;
     justify-items: stretch;
     // padding: 0;
-    width: 60%;
+    max-width: 60%;
     margin: 0 auto;
     font-size: 1.4rem;
   }
