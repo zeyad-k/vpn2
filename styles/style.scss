@@ -381,7 +381,12 @@ span {
     scale: 0.8;
   }
   @include mobile {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+    // padding: 0;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.4rem;
   }
 
   display: grid;
@@ -397,12 +402,18 @@ span {
     border-left: 0.2rem solid #eeeff2;
     @include mobile {
       border: 0;
+      border-top: 0.2rem solid #eeeff2;
+      border-bottom: 0.2rem solid #eeeff2;
     }
   }
   .icon-group {
     display: flex;
     gap: calc(var(--default-padding) * 0.5);
     padding: 3rem;
+    // @include mobile {
+    //   padding: 3rem;
+    // }
+
     .text-group {
       display: flex;
       flex-direction: column;
